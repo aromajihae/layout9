@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+    position: fixed;
+    }
+nav ul {
+    list-style: none;
+  }
+nav ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 13px 23px;
+   }
+nav ul li:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;  
+    font-size: 15px;
+}
+
+
+.slider img {
+    width: 100%;
+}
+.slider p {
+    position: relative;
+    top: -110px;
+    color: white;
+    text-align: center;
+}
+.slider .big {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.slider .small {
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;;
+    border: 1px dashed black;
+}
+
+.box1 {
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+
+.pic img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.pic > div {
+    padding: 50px;
+    text-align: center;
+}
+.name1, .name2, .name3 {
+    float: left;
+}
+
+.pic::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.box2 {
+    margin-top: 50px;
+    color: white;
+}
+.box2 h2, .box2 p {
+    text-align: center;
+
+}
+
+.box2 table {
+    border-collapse: collapse;
+    border: gray;
+}
+.box2 td {
+    background-color: white;
+    width: 800px;
+    height: 35px;
+    color: gray;
+    
+}
+
+
+.box2 img {
+    width: 200px;
+    height: 150px;
+}
+.newyork, .paris, .sanfran {
+    
+    float: left;
+    }
+
+.newyork {
+    background-color: white;    
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+}
+.paris {
+    background-color: white;    
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+}
+.sanfran {
+    background-color: white;    
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+}
+
+.box2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.buybox h4 {
+    color: black;
+}
+.buybox span {
+    color: gray;
+}
+.buybox p {
+    color: black;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이더 테스트</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+
+        //bxslider 2개 이상 사용하기
+        //슬라이더를 사용할 클래스의 이름을 바꿔서 사용하면 됨
+      $('.slider2').bxSlider();
+
+        //bxslider 기능 옵션
+      $('.slider3').bxSlider({
+          auto: true, // 이미지 전환이 자동으로 변경
+          speed: 500, // 이미지 전환속도 1000/1초
+          pause: 4000, // 이미지가 전환된 후 잠시 움직임을 고정하는 시간
+          mode: "fade", //이미지가 전환되는 효과, 'fade', 'horizontal', 'verticla' 3가지가 존재함
+          autoControls: true, //이미지 전환 효과 버튼 출력
+          pager: true // 이미지 전환 인디케이터 사용
+      });
+
+
+    });
+  </script>
+
+  <style>
+      li > img {
+          width: 100%;
+      }
+  </style>
+
+</head>
+<body>
+    <div>
+        <ul  class="slider">
+            <li>
+                <img src="./images/peng1.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/peng10.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/images/peng3.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/images/peng4.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/images/pic1/peng5.jpg" alt="">
+            </li>
+        </ul>
+
+        <br>
+
+        <ul class="slider2">
+            <li><img src="./images/img_5terre.jpg" alt=""></li>
+            <li><img src="./images/img_corniglia.jpg" alt=""></li>
+            <li><img src="./images/img_manarola.jpg" alt=""></li>
+            <li><img src="./images/img_monterosso.jpg" alt=""></li>
+            <li><img src="./images/img_riomaggiore.jpg" alt=""></li>
+            <li><img src="./images/img_vernazza.jpg" alt=""></li>
+        </ul>
+
+        <br>
+        <ul class="slider3">
+            <li><img src="./images/img_5terre.jpg" alt=""></li>
+            <li><img src="./images/img_corniglia.jpg" alt=""></li>
+            <li><img src="./images/img_manarola.jpg" alt=""></li>
+            <li><img src="./images/img_monterosso.jpg" alt=""></li>
+            <li><img src="./images/img_riomaggiore.jpg" alt=""></li>
+            <li><img src="./images/img_vernazza.jpg" alt=""></li>
+        </ul>
+      </div>
+    
+</body>
+</html>
